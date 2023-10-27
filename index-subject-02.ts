@@ -9,6 +9,5 @@ if (loadingOverlay) {
             ? loadingOverlay.classList.add('open')
             : loadingOverlay.classList.remove('open');
     });
-    loadingService.showLoading();
     setTimeout(() => loadingService.hideLoading(), 1500);
 }

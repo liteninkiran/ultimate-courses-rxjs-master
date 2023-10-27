@@ -1,6 +1,6 @@
-import { Observable, Subject } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 
-const loading$ = new Subject<boolean>();
+const loading$ = new BehaviorSubject<boolean>(true);
 
 export const loadingService: ILoadingService = {
     showLoading: () => loading$.next(true),
